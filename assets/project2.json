@@ -1,0 +1,19 @@
+{
+    "projects":[
+    {
+    "name": "Apps",
+    "imgs":["images/project/Deve1.png", "images/project/Deve2.png", "images/project/Deve3.png","images/project/UIDesign1.png"],
+    "categories":["Web Development", "UI Design"]
+    },
+    {
+    "name": "Logo",
+    "imgs":["images/project/Logo1.png", "images/project/Logo2.png","images/project/Deve4.png"],
+    "categories":["Logo Design"]
+    },
+    {
+    "name": "Website Rewrite",
+    "imgs":["images/project/Logo1.png", "images/project/UIDesign1.png","images/project/UIDesign2.png"],
+    "categories":["Logo Design", "UI Design"]
+    }
+    ]
+    }

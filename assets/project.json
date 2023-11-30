@@ -1,0 +1,56 @@
+{
+    "categories": [
+      {
+        "name": "Web Development",
+        "projects": [
+          {
+            "name": "Dashboard Development",
+            "imageSrc": "images/project/Deve1.png"
+          },
+          {
+            "name": "Restaurant Website",
+            "imageSrc": "images/project/Deve2.png"
+          },
+          {
+            "name": "Dating App",
+            "imageSrc": "images/project/Deve3.png"
+          },
+          {
+            "name": "Redesign Tourist Website",
+            "imageSrc": "images/project/Deve4.png"
+          }
+          
+        ]
+      },
+      {
+        "name": "Logo Design",
+        "projects": [
+          {
+            "name": "Logo & Label Design",
+            "imageSrc": "images/project/Logo1.png"
+          },
+          {
+            "name": "Logo Design",
+            "imageSrc": "images/project/Logo2.png"
+          }
+         
+        ]
+      },
+      {
+        "name": "UI Design",
+        "projects": [
+          {
+            "name": "UI Design-Plant Care App",
+            "imageSrc": "images/project/UIDesign1.png"
+          },
+          {
+            "name": "UI Design- E.Comm App",
+            "imageSrc": "images/project/UIDesign2.png"
+          }
+          
+        ]
+      }
+      
+    ]
+  }
+  
