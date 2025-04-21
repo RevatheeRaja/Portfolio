@@ -1,19 +1,44 @@
 {
-    "projects":[
+  "projects": [
     {
-    "name": "Apps",
-    "imgs":["images/project/Deve1.png", "images/project/Deve2.png", "images/project/Deve3.png","images/project/UIDesign1.png"],
-    "categories":["Web Development", "UI Design"]
+      "name": "Apps",
+      "categories": ["Web Development", "UI Design"],
+      "imgs": [
+        {
+          "src": "images/project/Deve1.png",
+          "link": "https://www.behance.net/gallery/215095707/Accessible-health-care-app-for-Seniors"
+        },
+        {
+          "src": "images/project/Deve2.png",
+          "link": "https://www.behance.net/gallery/214353985/Brand-Presentation"
+        },
+        {
+          "src": "images/project/Deve3.png",
+          "link": "https://www.behance.net/gallery/146512491/Website-Redesign-UIUX-case-study"
+        },
+        {
+          "src": "images/project/UIDesign1.png",
+          "link": "https://www.behance.net/gallery/142075741/Hook-N-Loop-App-UX-Case-Study"
+        }
+      ]
     },
     {
-    "name": "Logo",
-    "imgs":["images/project/Logo1.png", "images/project/Logo2.png","images/project/Deve4.png"],
-    "categories":["Logo Design"]
+      "name": "Logo",
+      "categories": ["Logo Design"],
+      "imgs": [
+        { "src": "images/project/Logo1.png", "link": "" },
+        { "src": "images/project/Logo2.png", "link": "" },
+        { "src": "images/project/Deve4.png", "link": "" }
+      ]
     },
     {
-    "name": "Website Rewrite",
-    "imgs":["images/project/Logo1.png", "images/project/UIDesign1.png","images/project/UIDesign2.png"],
-    "categories":["Logo Design", "UI Design"]
+      "name": "Website Rewrite",
+      "categories": ["Logo Design", "UI Design"],
+      "imgs": [
+        { "src": "images/project/Logo1.png", "link": "" },
+        { "src": "images/project/UIDesign1.png", "link": "" },
+        { "src": "images/project/UIDesign2.png", "link": "" }
+      ]
     }
-    ]
-    }
+  ]
+}
