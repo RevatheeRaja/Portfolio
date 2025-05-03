@@ -1,0 +1,38 @@
+ <!-- Timeline items
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>UX/UI Designer – Fibutronic</h4>
+            <span>Apr 2024 – Nov 2024</span>
+            <p>
+              Led redesign of a finance system using React.js & Kendo UI.<br />
+              Created high-fidelity UI in Figma and collaborated with backend
+              teams.
+            </p>
+          </div>
+        </div> -->
+        <div class="timeline">
+            <div class="timeline-item left" data-aos="fade-right" data-aos-delay="0">
+              <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="timeline-content">
+                <img src="images/company1.png" alt="Company Logo" class="company-logo">
+                <h4>UX/UI Designer – Fibutronic</h4>
+                <span>Apr 2024 – Nov 2024</span>
+                <p>Led redesign of a finance system using React.js & Kendo UI. Created high-fidelity UI in Figma and collaborated with backend teams.</p>
+              </div>
+            </div>
+      
+            <div class="timeline-item right" data-aos="fade-left" data-aos-delay="200">
+              <div class="timeline-icon"><i class="fas fa-code"></i></div>
+              <div class="timeline-content">
+                <img src="images/company2.png" alt="Company Logo" class="company-logo">
+                <h4>Frontend Developer – XYZ Corp</h4>
+                <span>Jan 2022 – Mar 2024</span>
+                <p>Developed responsive SPA applications using ReactJS, Tailwind, and NodeJS backend.</p>
+              </div>
+            </div>
+      
+            <!-- More timeline items -->
+            
+          </div>
+        </div>

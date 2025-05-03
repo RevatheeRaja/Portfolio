@@ -6,7 +6,7 @@ let sections;
 const handleNavbarResize = () => {
   const navbar = document.querySelector(".navbar");
   window.onscroll = () => {
-    this.scrollY > 20
+    window.scrollY > 20
       ? navbar.classList.add("sticky")
       : navbar.classList.remove("sticky");
   };
@@ -15,19 +15,20 @@ const handleNavbarResize = () => {
 // Function to add active link with section scroll
 const scrollActive = () => {
   const scrollY = window.pageYOffset;
+
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 60; // adjust for navbar
     const sectionId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(`.links a[href*=${sectionId}]`)
-        .classList.add("active");
-    } else {
-      document
-        .querySelector(`.links a[href*=${sectionId}]`)
-        .classList.remove("active");
+    const navLink = document.querySelector(`.links a[href*="${sectionId}"]`);
+
+    if (navLink) {
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLink.classList.add("active");
+      } else {
+        navLink.classList.remove("active");
+      }
     }
   });
 };
@@ -51,18 +52,37 @@ const handleNavLinkClick = () => {
 };
 
 // Function for typing effect
-const typingEffect = (target, text, speed) => {
+const typingEffect = (target, text, speed, callback) => {
   let i = 0;
+  target.innerHTML = ""; // Clear previous text
   const typeWriter = () => {
     if (i < text.length) {
       target.innerHTML += text.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
+    } else if (callback) {
+      setTimeout(callback, 500); // small pause before switching
     }
   };
   typeWriter();
 };
 
+const startTypingLoop = () => {
+  const typingTarget = document.querySelector("#typing-effect");
+  const typingTexts = ["UX/UI Designer", "React Developer"];
+  const typingSpeed = 150;
+  const delayBetween = 2000;
+  let index = 0;
+
+  const loopTyping = () => {
+    typingEffect(typingTarget, typingTexts[index], typingSpeed, () => {
+      index = (index + 1) % typingTexts.length;
+      setTimeout(loopTyping, delayBetween);
+    });
+  };
+
+  loopTyping();
+};
 //Contact button attention grabber
 const addPulsate = () => {
   const button = document.getElementById("contactButton");
@@ -131,8 +151,8 @@ const fetchAndRenderProjects = () => {
           const projectImage = document.createElement("img");
           projectImage.src = imgObj.src;
           projectImage.alt = "";
-          projectImage.style.width = "400px";
-          projectImage.style.height = "200px";
+          projectImage.style.width = "500px";
+          projectImage.style.height = "300px";
           projectImage.style.border = "2px solid #ddd";
           projectImage.style.borderRadius = "5px";
 
@@ -223,12 +243,7 @@ const init = () => {
   for (const n of navLink) {
     n.addEventListener("click", handleNavLinkClick);
   }
-
-  // Typing effect
-  const typingTarget = document.querySelector("#typing-effect");
-  const typingText = "Front-End Developer";
-  const typingSpeed = 150;
-  typingEffect(typingTarget, typingText, typingSpeed);
+  startTypingLoop();
 
   //attention grabber
   setInterval(addPulsate, 5000);
