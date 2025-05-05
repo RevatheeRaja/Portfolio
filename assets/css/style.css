@@ -88,7 +88,7 @@ img {
   border: none;
 }
 .section-padding {
-  padding: 80px 0;
+  padding-top: 1rem;
 }
 .text-align {
   text-align: center;
@@ -335,7 +335,8 @@ img {
 /*===== About =====*/
 .about-section,
 .portfolio,
-.pricing {
+.pricing,
+.contact-section {
   background-color: var(--black-100);
 }
 .about-section .about-image,
