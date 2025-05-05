@@ -18,6 +18,13 @@
       rel="stylesheet"
     />
     <!-- AOS CSS ends -->
+    <!--FAVICON-->
+    <link
+      href="images/new_projects/logo.png"
+      rel="icon"
+      type="image/png"
+      size="any"
+    />
     <!--===== Main JS =====-->
     <script src="assets/js/main.js" defer type="text/javascript"></script>
 
@@ -79,17 +86,26 @@
       <ul class="header-social">
         <!--===== Header Social =====-->
         <li>
-          <a href="https://github.com/RevatheeRaja"
+          <a
+            href="https://github.com/RevatheeRaja"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-github"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/revathee-r-572692282/"
+          <a
+            href="https://www.linkedin.com/in/revathee-r-572692282/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-linkedin"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.behance.net/revatheerajagopal"
+          <a
+            href="https://www.behance.net/revatheerajagopal"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-behance"></i
           ></a>
         </li>
@@ -933,12 +949,17 @@
         <!--===== Contact Form =====-->
         <div class="row">
           <div class="contact-form">
-            <form action="">
+            <form
+              action="https://formspree.io/f/mkgrrjrv"
+              method="POST"
+              id="contact-form"
+            >
               <div class="row">
                 <div class="w-50">
                   <div class="input-group">
                     <input
                       type="text"
+                      name="name"
                       placeholder="Name"
                       class="input-control"
                       id="name"
@@ -948,6 +969,7 @@
                   <div class="input-group">
                     <input
                       type="email"
+                      name="email"
                       placeholder="Email"
                       class="input-control"
                       id="email"
@@ -957,6 +979,7 @@
                   <div class="input-group">
                     <input
                       type="text"
+                      name="subject"
                       placeholder="Subject"
                       class="input-control"
                       id="subject"

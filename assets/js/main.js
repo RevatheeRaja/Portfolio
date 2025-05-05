@@ -184,6 +184,51 @@ const fetchAndRenderProjects = () => {
 };
 
 //Form Validation
+// const validateForm = (event) => {
+//   event.preventDefault();
+
+//   const nameError = document.querySelector("#nameError");
+//   const emailError = document.querySelector("#emailError");
+//   const subjectError = document.querySelector("#subjectError");
+//   const messageError = document.querySelector("#messageError");
+
+//   nameError.textContent = "";
+//   emailError.textContent = "";
+//   subjectError.textContent = "";
+//   messageError.textContent = "";
+//   const name = document.querySelector("#name").value;
+//   const email = document.querySelector("#email").value;
+//   const subject = document.querySelector("#subject").value;
+//   const message = document.querySelector("#message").value;
+
+//   if (!name.trim()) {
+//     document.querySelector("#nameError").textContent = "Name is required";
+//     return;
+//   }
+
+//   if (!email.trim()) {
+//     document.querySelector("#emailError").textContent = "Email is required";
+//     return;
+//   } else if (!isValidEmail(email)) {
+//     document.querySelector("#emailError").textContent = "Enter a valid Email";
+//     return;
+//   }
+//   if (!subject.trim()) {
+//     document.querySelector("#subjectError").textContent = "Subject is required";
+//     return;
+//   }
+//   if (!message.trim()) {
+//     document.querySelector("#messageError").textContent = "Message is required";
+//     return;
+//   }
+//   const successMessage = document.querySelector("#successMessage");
+//   successMessage.classList.add("success");
+//   successMessage.textContent = "Message sent successfully!!!";
+// };
+// const isValidEmail = (email) => {
+//   const emailRegex = /^\S+@\S+\.\S+$/;
+//   return emailRegex.test(email);
+// };
 const validateForm = (event) => {
   event.preventDefault();
 
@@ -191,44 +236,73 @@ const validateForm = (event) => {
   const emailError = document.querySelector("#emailError");
   const subjectError = document.querySelector("#subjectError");
   const messageError = document.querySelector("#messageError");
+  const successMessage = document.querySelector("#successMessage");
 
   nameError.textContent = "";
   emailError.textContent = "";
   subjectError.textContent = "";
   messageError.textContent = "";
-  const name = document.querySelector("#name").value;
-  const email = document.querySelector("#email").value;
-  const subject = document.querySelector("#subject").value;
-  const message = document.querySelector("#message").value;
+  successMessage.textContent = "";
+  successMessage.classList.remove("success", "error");
 
-  if (!name.trim()) {
-    document.querySelector("#nameError").textContent = "Name is required";
-    return;
+  const name = document.querySelector("#name").value.trim();
+  const email = document.querySelector("#email").value.trim();
+  const subject = document.querySelector("#subject").value.trim();
+  const message = document.querySelector("#message").value.trim();
+
+  let hasError = false;
+
+  if (!name) {
+    nameError.textContent = "Name is required";
+    hasError = true;
   }
 
-  if (!email.trim()) {
-    document.querySelector("#emailError").textContent = "Email is required";
-    return;
+  if (!email) {
+    emailError.textContent = "Email is required";
+    hasError = true;
   } else if (!isValidEmail(email)) {
-    document.querySelector("#emailError").textContent = "Enter a valid Email";
-    return;
+    emailError.textContent = "Enter a valid Email";
+    hasError = true;
   }
-  if (!subject.trim()) {
-    document.querySelector("#subjectError").textContent = "Subject is required";
-    return;
+
+  if (!subject) {
+    subjectError.textContent = "Subject is required";
+    hasError = true;
   }
-  if (!message.trim()) {
-    document.querySelector("#messageError").textContent = "Message is required";
-    return;
+
+  if (!message) {
+    messageError.textContent = "Message is required";
+    hasError = true;
   }
-  const successMessage = document.querySelector("#successMessage");
-  successMessage.classList.add("success");
-  successMessage.textContent = "Message sent successfully!!!";
+
+  if (hasError) return;
+
+  const form = document.getElementById("contact-form");
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { Accept: "application/json" },
+  })
+    .then(() => {
+      form.reset();
+      successMessage.classList.add("success");
+      successMessage.textContent =
+        "Your information has been received. We'll contact you shortly!";
+    })
+    .catch(() => {
+      successMessage.classList.add("error");
+      successMessage.textContent =
+        "Oops! Something went wrong. Please try again.";
+    });
 };
+
 const isValidEmail = (email) => {
   const emailRegex = /^\S+@\S+\.\S+$/;
   return emailRegex.test(email);
 };
+
 // INIT
 const init = () => {
   handleNavbarResize();
