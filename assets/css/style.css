@@ -739,7 +739,7 @@ img {
 }
 .contact-section .input-group {
   margin: 0 0 25px;
-  border-radius: 30px;
+  border-radius: 1rem;
   background-color: var(--black-100);
   box-shadow: var(--shadow-black-100);
 }
