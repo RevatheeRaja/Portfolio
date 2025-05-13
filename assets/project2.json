@@ -23,16 +23,6 @@
       ]
     },
     {
-      "name": "Logo",
-      "categories": ["Logo Design"],
-      "imgs": [
-        {
-          "src": "images/new_projects/Project3.png",
-          "link": "https://www.behance.net/gallery/214353985/Brand-Presentation"
-        }
-      ]
-    },
-    {
       "name": "UX/UI Design",
       "categories": ["UI Design"],
       "imgs": [
@@ -59,6 +49,16 @@
         {
           "src": "images/new_projects/Project5.png",
           "link": "https://www.behance.net/gallery/142075741/Hook-N-Loop-App-UX-Case-Study"
+        }
+      ]
+    },
+    {
+      "name": "Logo",
+      "categories": ["Logo Design"],
+      "imgs": [
+        {
+          "src": "images/new_projects/Project3.png",
+          "link": "https://www.behance.net/gallery/214353985/Brand-Presentation"
         }
       ]
     }
