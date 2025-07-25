@@ -1,0 +1,104 @@
+<!--===== Services Section End =====-->
+
+<!--===== Pricing Section Start =====-->
+<!-- <section class="pricing section-padding" id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-align">
+            <h5 class="sub-title">pricing</h5>
+            <h3 class="main-title">pricing plans</h3>
+            <ul class="line">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="row justify-content-center">
+          <div class="pricing-item">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>basic</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">€</span>
+                <span class="price">800</span>
+                <span class="period">/project</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fa fa-check"></i> Consultancy</li>
+                  <li><i class="fa fa-check"></i> Information Architecture</li>
+                  <li><i class="fa fa-check"></i> UI Wire Frames</li>
+                  <li><i class="fa fa-check"></i> Logo Design</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn-2">get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-item">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>premium</h3>
+                <h2 class="best-value">best value</h2>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">€</span>
+                <span class="price">1400</span>
+                <span class="period">/project</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fa fa-check"></i> Consultancy</li>
+                  <li><i class="fa fa-check"></i> Information Architecture</li>
+                  <li><i class="fa fa-check"></i> High Fidelity Design</li>
+                  <li><i class="fa fa-check"></i> Logo & Branding</li>
+                  <li>
+                    <i class="fa fa-check"></i> Website Development &
+                    Implementation
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn-1">get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-item">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>ultimate</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">€</span>
+                <span class="price">2000</span>
+                <span class="period">/Project</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="fa fa-check"></i> Consultancy</li>
+                  <li><i class="fa fa-check"></i> Information Architecture</li>
+                  <li><i class="fa fa-check"></i> High Fidelity Design</li>
+                  <li><i class="fa fa-check"></i> Logo & Branding</li>
+                  <li>
+                    <i class="fa fa-check"></i> Website Development &
+                    Implementation
+                  </li>
+                  <li><i class="fa fa-check"></i> SEO</li>
+                  <li>
+                    <i class="fa fa-check"></i> Free maintenance upto 1 year
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="#" class="btn-2">get started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!--===== Pricing Section End =====-->
