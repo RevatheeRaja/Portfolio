@@ -4,6 +4,19 @@
       "name": "Apps",
       "categories": ["Web Development"],
       "imgs": [
+         {
+          "src": "images/new_projects/kigqweb.png",
+          "link": "https://www.kigq.de/"
+        },
+        {
+          "src": "images/new_projects/fibu.png",
+          "link": "https://fibuworx.ai/"
+        },
+        {
+          "src": "images/new_projects/wollring.png",
+          "link": "https://wollring-law.com/"
+        },
+        
         {
           "src": "images/new_projects/Project8.png",
           "link": "https://github.com/RevatheeRaja/Finance-Dashboard"
@@ -11,15 +24,8 @@
         {
           "src": "images/new_projects/Deve2.png",
           "link": "https://github.com/RevatheeRaja/Cooking-Blog"
-        },
-        {
-          "src": "images/new_projects/kigqweb.png",
-          "link": "https://www.kigq.de/"
-        },
-        {
-          "src": "images/new_projects/fibu.png",
-          "link": "https://fibuworx.ai/"
         }
+       
       ]
     },
     {
