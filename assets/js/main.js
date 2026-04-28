@@ -69,7 +69,7 @@ const typingEffect = (target, text, speed, callback) => {
 
 const startTypingLoop = () => {
   const typingTarget = document.querySelector("#typing-effect");
-  const typingTexts = ["Digital Media Designer", "Web Designer", "IT Project Manager", "Agile Scrum Practitioner"];
+  const typingTexts = ["UX/UI Designer", "Web Designer", "ystem & Interface Design", "HMI & Workflow Optimization"];
   const typingSpeed = 150;
   const delayBetween = 2000;
   let index = 0;
